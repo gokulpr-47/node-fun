@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>send-email</title>
+    <link rel="stylesheet" href="../../public/css/style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+    <div class="header">
+        <h3>SEND EMAIL</h3>
+    </div>
+
+    <div class="content-wrapper">
+
+        <div class="image">
+            <img src="../../public/img/mail.jpg" alt="mail pic">
+        </div>
+
+        <div class="form-content">
+            <form class="form" action="send" method="POST"><br>
+                <div class="response">{{msg}}</div>
+                <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+                <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+                <input type="email" id="email" name="email" placeholder="Email"><br>
+                <input type="number" id="number" name="phone" placeholder="Phone number"><br>
+                <!-- <input type="password" id="password" name="password" placeholder="Password"><br> -->
+                <input class="submit" type="submit" value="Submit">
+            </form>
+        </div>
+
+    </div>    
+    
+    <div class="footer">Made by ******</div>
+</div>
+
+</body>
+</html>
