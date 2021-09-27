@@ -1,0 +1,130 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(34 33 33) !important;
+    color: white;
+}
+
+.content-wrapper{
+    height: -webkit-fill-available;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.image{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: inherit;
+}
+
+.form-content{
+    display: flex;
+    justify-content: end;
+    height:100%;
+}
+
+.response{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding:10px;
+    background-color: rgb(34 33 33);
+}
+
+.form{
+    padding:30px;
+    background-color: rgb(34 33 33);
+    width: 356px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input{
+    border-radius: 10px;
+    border:none;
+    outline:none;
+}
+
+input[type=text], input[type=email], input[type=password], input[type=number]{
+    padding: 5px 0 5px 10px;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus{
+    outline: none;
+}
+
+input[type=submit]{
+    padding: 8px 15px;
+    border-radius: 80px;
+    background-color: black;
+    color: white;
+    border:none;
+    outline:none;
+}
+input[type=submit]:hover{
+    cursor:pointer;
+    background-color: rgba(0, 0, 0, 0.713);
+    transition: ease-in-out 0.4s;
+}
+
+/* confirm css */
+.overlay{
+    position:fixed;
+    display:none;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+
+}
+
+.go-back{
+    background-color: black;
+    color: white;
+    padding:10px;
+    border-radius: 10px;
+    text-decoration:none;
+    width: fit-content;
+    margin: 10px auto;
+}
+.go-back:hover{
+    background-color: rgb(17, 17, 17);
+    transition: ease-in-out 0.3s;
+}
+
+.black{
+    color:#999191;
+
+}
